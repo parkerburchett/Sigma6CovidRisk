@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/picture">
+        <label for="valid_month_year">Month</label>
+        <select name= valid_month_year method="GET" action="/">
+            {% for i in valid_month_year %}  
+            <option value= "{{i}}" >{{ i }}</option>"
+            {% endfor %}
+            <option label=" " selected></option>
+        </select>
+
+
+        <label for="valid_sex">Sex</label>
+        <select name= valid_sex method="GET" action="/">
+            {% for i in valid_sex %}
+            <option value= "{{i}}" >{{ i }}</option>"
+            {% endfor %}
+            <option label=" " selected></option>
+        </select>
+
+
+        <label for="valid_age_group">Age Group</label>
+        <select name= valid_age_group method="GET" action="/">
+            {% for i in valid_age_group %}
+            <option value= "{{i}}" >{{ i }}</option>"
+            {% endfor %}
+            <option label=" " selected></option>
+        </select>
+
+
+        <label for="valid_race_ethnicity_combined">race_ethnicity_combined</label>
+        <select name= valid_race_ethnicity_combined method="GET" action="/">
+            {% for i in valid_race_ethnicity_combined %}
+            <option value= "{{i}}" >{{ i }}</option>"
+            {% endfor %}
+            <option label=" " selected></option>
+        </select>
+
+
+        <label for="valid_medcond_yn">Medical Condition</label>
+        <select name= valid_medcond_yn method="GET" action="/">
+            {% for i in valid_medcond_yn %}
+            <option value= "{{i}}" >{{ i }}</option>"
+            {% endfor %}
+            <option label=" " selected></option>
+        </select>
+
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
